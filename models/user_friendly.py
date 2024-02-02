@@ -142,4 +142,4 @@ class MemberPresence(BaseModel):
 
 
 class MkIndividualIDs(BaseModel):
-    mk_individual_id: Union[int, str]
+    mk_individual_id: int
