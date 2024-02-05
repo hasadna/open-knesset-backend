@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, validator, ValidationError
 from typing import List, Union
 
 
@@ -19,6 +19,7 @@ class MinisterByIndividual(BaseModel):
 
 
 class MinisterByPersonal(BaseModel):
+    PersonID: int = 468
     PersonID: int = 468
     FirstName: str = "ישראל"
     LastName: str = "כץ"
