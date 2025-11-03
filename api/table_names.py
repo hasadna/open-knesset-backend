@@ -77,6 +77,8 @@ TABLE_NAMES = [
     "minister_by_personal",
     "minister_by_individual",
     "member_kns_by_personal",
-    "member_kns_by_individual"
+    "member_kns_by_individual",
+    "member_english_names"
 ]
+
 
