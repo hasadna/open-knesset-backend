@@ -23,7 +23,7 @@ jobs:
         if [ "${GITHUB_REF}" == "refs/heads/main" ]; then
           docker tag app "${DOCKER_APP_IMAGE_NAME}:latest" &&\
           docker push "${DOCKER_APP_IMAGE_NAME}:latest" &&\
-          apt install -y python3-yaml &&\
+          sudo apt install -y python3-yaml &&\
           if ! git log -1 --pretty=format:"%s" | grep -- --no-deploy; then
             cd `mktemp -d` &&\
             echo "${DEPLOY_KEY}" > deploy_key &&\
